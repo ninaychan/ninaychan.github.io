@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laurissa Lam Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home-section">Home</a>
+            <a href="#about-section">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="resume.pdf" download>Resume</a>
+        </nav>
+    </header>
+
+    <div class="container intro" id="about">
+        <section id="home-section">
+        <img src="headshot.jpeg" alt="Laurissa Lam" />
+        <h1>Laurissa Lam</h1>
+        <h2>I'm <span class="typing"></span></h2>
+
+        <div class="social-icons">
+            <a href="https://github.com/laurissalam" target="_blank">
+                <img src="github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/laurissa-lam" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="mailto:laurissalam98@gmail.com">
+                <img src="gmail.png" alt="Email" />
+            </a>
+        </div>
+        </section>
+
+    </div>
+
+    <div class="container">
+        <section id="about-section">
+            <h2>About Me</h2>
+            <div>
+                <p>
+                    Hello there, I'm so happy you are here! :) I’m Laurissa, a Software Engineer based in New York, NY. I was born and raised in Hong Kong. Then, I moved to Seattle and studied Computer Science at University of Washington. Since graduating, I have designed and developed scalable database-centric applications and backend systems using Java, Ruby on Rails, Python, JavaScript, SQL and more. Outside of developing, I’m enjoy editing my travel videos, discovering the hidden gems in New York, and learning 3D modeling for making artisan keycaps. I love connecting with like-minded people who are also passionate in tech, food, and cats! Hope you enjoy checking out my site:)
+                </p>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-entry">
+                <h3>Full Stack Software Engineer at WeWork</h3>
+                <ul>
+                    <li>Led the design and upgrade of the holiday/blackout dates permission system across 756 global locations, resulting in a 20% decrease in booking errors and a 30% boost in member satisfaction.</li>
+                    <li>Collaborated with cross-functional teams to define requirements and implement new features using Ruby on Rails and ActiveRecord.</li>
+                    <li>Optimized backend systems' performance, achieving a 30% reduction in average response time and a 40% surge in system throughput.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Software Developer at Goldman Sachs</h3>
+                <ul>
+                    <li>Designed and deployed RESTful services and APIs for the GS Select Lending Platform, supporting 50,000+ concurrent users using Java.</li>
+                    <li>Expanded lending business by 25%, reaching $10 Billion notional and furthering syndication of loans.</li>
+                    <li>Conducted unit tests using JUnit, resulting in a build time reduction by 60%.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Software Engineer Intern at Grab</h3>
+                <ul>
+                    <li>Developed mobile features for Grab Express using React Native, catering to 122M users in Southeast Asia.</li>
+                    <li>Enhanced application quality, reducing bug instances by 20%.</li>
+                    <li>Presented software updates to the CEO, earning praise for innovative design and execution.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Software Developer Intern at Goldman Sachs</h3>
+                <ul>
+                    <li>Integrated Adobe Analytics with AngularJS on the Investment Management platform to produce comprehensive data reports.</li>
+                    <li>Utilized data science and analytics to enhance business insights, increasing client retention by 25%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Java</li>
+                <li>Ruby</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+            </ul>
+
+            <h3>Frameworks/Libraries</h3>
+            <ul>
+                <li>Ruby on Rails</li>
+                <li>AngularJS</li>
+                <li>React Native</li>
+                <li>Spring Boot</li>
+                <li>Node.js</li>
+                <li>Bootstrap</li>
+            </ul>
+
+            <h3>Testing Tools</h3>
+            <ul>
+                <li>JUnit</li>
+                <li>Mockito</li>
+                <li>RSpec</li>
+                <li>Postman</li>
+            </ul>
+
+            <h3>API & Web Technologies</h3>
+            <ul>
+                <li>REST API</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+
+            <h3>Databases</h3>
+            <ul>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                <li>NoSQL databases</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Laurissa Lam</p>
+    </footer>
+
+    <!-- Chatbot HTML -->
+    <div id="chatbot">
+        <div class="chatbot-message">
+            <p>Hi there! What would you like to know about me?</p>
+            <button onclick="askQuestion('live')">Where are you currently based in?</button>
+            <button onclick="askQuestion('food')">What do you like to eat?</button>
+            <button onclick="askQuestion('hobbies')">Any hobbies or favorite genres?</button>
+        </div>
+        <div class="chatbot-input">
+            <p id="chatbot-response"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    // When the DOM is ready, initialize Typed.js
+    document.addEventListener('DOMContentLoaded', function() {
+        let typed = new Typed(".typing", {
+            strings: [
+                "a Developer",
+                "a Video Editor",
+                "a Traveler",
+                "an Artist",
+                "a Dancer",
+            ],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+        });
+    });
+
+    // Name change interactions
+    const myname = document.querySelector('.myname'); // Make sure '.myname' is the correct selector
+    myname.addEventListener(
+        "mouseenter",
+        () => (myname.innerText = " Laurissa Lam")
+    );
+    myname.addEventListener(
+        "mouseleave",
+        () => (myname.innerText = "Laurissa Lam")
+    );
+
+        // Chatbot functionality
+        function askQuestion(topic) {
+            var response = "";
+            if (topic === 'food') {
+                response = "I love trying out different cuisines but my go-to is always Japanese or Korean.";
+            } else if (topic === 'hobbies') {
+                response = "I've been exploring my creativity by editing short videos and travel videos. I'm interested in animation and planning to learn 3D modeling in my spare time.";
+            } else if (topic === 'live') {
+                response = "I've lived in Hong Kong and Seattle but currently, I'm based in New York.";
+            } else {
+                response = "I'm not sure how to answer that. Please ask me about where I'm based in or my favorite food or hobbies.";
+            }
+            document.getElementById('chatbot-response').innerText = response;
+        }
+        
+    </script>
+</body>
+</html>
