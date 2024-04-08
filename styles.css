@@ -1,0 +1,105 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Main content container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Introduction section */
+#home-section {
+    text-align: center;
+}
+
+.intro img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+}
+
+.intro .social-icons {
+    margin-top: 20px;
+}
+
+.intro .social-icons a {
+    margin-right: 10px;
+}
+
+/* About section */
+#about-section {
+    margin-top: 40px;
+}
+
+#about-section p {
+    line-height: 1.6;
+}
+
+/* Experience section */
+#experience {
+    margin-top: 40px;
+}
+
+.experience-entry {
+    margin-bottom: 40px;
+}
+
+.experience-entry h3 {
+    margin-bottom: 10px;
+}
+
+.experience-entry ul {
+    list-style-type: none;
+}
+
+.experience-entry ul li {
+    margin-bottom: 5px;
+}
+
+/* Skills section */
+#skills {
+    margin-top: 40px;
+}
+
+#skills ul {
+    list-style-type: none;
+}
+
+#skills ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
